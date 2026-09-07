@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ស្នេហារបស់យើង ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            min-height: 100vh;
+            padding-top: 60px;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: white;
+            font-size: 42px;
+        }
+
+        p {
+            color: white;
+            font-size: 22px;
+        }
+
+        button {
+            background: #ff1744;
+            color: white;
+            border: none;
+            padding: 16px 30px;
+            font-size: 20px;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+
+        #message {
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .heart {
+            position: fixed;
+            top: -50px;
+            font-size: 30px;
+            animation: fall 5s linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-50px) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ស្នេហារបស់យើង ❤️</h1>
+
+    <p>មនុស្សម្នាក់ដែលខ្ញុំស្រឡាញ់ 💕</p>
+
+    <button onclick="showLove()">ចុចទីនេះ ❤️</button>
+
+    <div id="message"></div>
+
+    <div class="heart" style="left: 10%;">❤️</div>
+    <div class="heart" style="left: 30%; animation-delay: 1s;">💕</div>
+    <div class="heart" style="left: 50%; animation-delay: 2s;">❤️</div>
+    <div class="heart" style="left: 70%; animation-delay: 0.5s;">💗</div>
+    <div class="heart" style="left: 90%; animation-delay: 3s;">❤️</div>
+
+    <script>
+        function showLove() {
+            document.getElementById("message").innerHTML =
+                "ដឹងថាអាណិត តែនៅស្រឡាញ់ ❤️";
+        }
+    </script>
+
+</body>
+</html>
